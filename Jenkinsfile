@@ -1,5 +1,9 @@
 pipeline {
   agent any
+  environment {
+    IMAGE = 'docker.52north.org/conterra/mapapps'
+    TAG   = 'latest'
+  }
   stages {
     stage('verify') {
       steps {
