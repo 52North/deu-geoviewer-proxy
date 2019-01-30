@@ -25,8 +25,21 @@ RUN ln -s /usr/src/app/bin/index.js /usr/local/bin/ckan-proxy
 # expose the folder of the whitelist
 VOLUME /tmp
 
-# expose the port
+# install jq - required for the replacement of env variables
+RUN apt-get update && \
+    apt-get install --no-install-recommends -y jq && \
+    apt-get -y autoremove --purge && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+COPY ./docker/startup.sh ./startup.sh
+
+# some env vars
+ENV EDP_DATA_API_URL https://www.europeandataportal.eu/data
+ENV WHITELIST_UPDATE_INTERVAL_MINUTES 60
+ENV WHITELIST_STORAGE_DIR /tmp/ckan-whitelist.json
+ENV LOGGING_LEVEL info
+
 EXPOSE 9090
 
-# the command
-CMD  [ "ckan-proxy", "/etc/ckan-proxy.json" ]
+CMD ["./startup.sh"]
