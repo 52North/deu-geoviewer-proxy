@@ -1,5 +1,12 @@
 FROM node:latest
 
+# install jq - required for the replacement of env variables
+RUN apt-get update && \
+    apt-get install --no-install-recommends -y jq && \
+    apt-get -y autoremove --purge && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
 # create the workdir
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
@@ -24,13 +31,6 @@ RUN ln -s /usr/src/app/bin/index.js /usr/local/bin/ckan-proxy
 
 # expose the folder of the whitelist
 VOLUME /tmp
-
-# install jq - required for the replacement of env variables
-RUN apt-get update && \
-    apt-get install --no-install-recommends -y jq && \
-    apt-get -y autoremove --purge && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
 
 COPY ./docker/startup.sh ./startup.sh
 
