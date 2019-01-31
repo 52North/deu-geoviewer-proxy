@@ -4,7 +4,7 @@ services:
     build: 
       context: ./
       dockerfile: ./Dockerfile
-    image: docker.52north.org/edp/ckan-proxy
+    image: docker.52north.org/edp/ckan-proxy:latest
     ports: 
       - 9090:9090
     environment: 
