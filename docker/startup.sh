@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 ## startup wrapper script
 
 CONFIG_FILE='/etc/ckan-proxy.json'
