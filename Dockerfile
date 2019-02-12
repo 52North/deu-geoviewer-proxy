@@ -1,11 +1,9 @@
-FROM node:latest
+FROM node:alpine
 
 # install jq - required for the replacement of env variables
-RUN apt-get update && \
-    apt-get install --no-install-recommends -y jq && \
-    apt-get -y autoremove --purge && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+RUN apk update && \
+    apk add jq && \
+    rm -rf /var/cache/apk/*
 
 # create the workdir
 RUN mkdir -p /usr/src/app

@@ -49,3 +49,4 @@ sftp-config.json
 /data/whitelist.json
 /settings-edp-ppe.json
 /nbproject/private/
+.build/
