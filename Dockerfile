@@ -25,17 +25,17 @@ COPY . /usr/src/app
 COPY settings-dev.json /etc/ckan-proxy.json
 
 # link the binary
-RUN ln -s /usr/src/app/bin/index.js /usr/local/bin/ckan-proxy
+RUN mkdir -p /var/lib/ckan-proxy \
+ && ln -s /usr/src/app/bin/index.js /usr/local/bin/ckan-proxy
 
 # expose the folder of the whitelist
-VOLUME /tmp
+VOLUME /var/lib/ckan-proxy
 
 COPY ./docker/startup.sh ./startup.sh
 
 # some env vars
 ENV EDP_DATA_API_URL https://www.europeandataportal.eu/data
 ENV WHITELIST_UPDATE_INTERVAL_MINUTES 60
-ENV WHITELIST_STORAGE_DIR /tmp/ckan-whitelist.json
 ENV LOGGING_LEVEL info
 
 EXPOSE 9090

@@ -40,7 +40,7 @@
       "rowsPerRequest": 2000,
       "maxErrorCount": 10
     },
-    "storageDir": "/tmp/ckan-whitelist.json",
+    "storageDir": "/var/lib/ckan-proxy/whitelist.json",
     "domains": [
       "www.europeandataportal.eu"
     ]
