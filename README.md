@@ -1,4 +1,11 @@
-# CKAN CORS Proxy
+# European Data Portal - EDP API CORS Proxy
+
+A lightweight web proxy managing a whitelist of domain names that
+provide a service which is registered in the European Data Portal.
+
+Initially the EDP API was based on CKAN. This has changed to a native
+API, still the naming in this component mostly still follows the
+original naming.
 
 ## Installation
 
@@ -11,6 +18,12 @@ npm install -g '52North/ckan-proxy'
 ```sh
 npm install -g bunyan
 ```
+
+### Docker
+
+You can use `docker-compose build` or use the following command:
+
+`docker build -t docker.52north.org/edp/edp-api-proxy:latest .`
 
 ### systemd
 Add a `node` user:
