@@ -13,8 +13,8 @@ urls = [ 'http://code.jquery.com/jquery-2.1.3.min.js',
 
 class User(TaskSet):
     def on_start(self):
-	self.target_url = choice(urls)
-        pass
+        self.target_url = choice(urls)
+
     @task
     def request(self):
         self.client.get('/?' + quote_plus(self.target_url))
