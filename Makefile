@@ -1,3 +1,4 @@
+#!make
 BUILD        = ./.build/docker-build
 BUILD_URL    = "https://raw.githubusercontent.com/autermann/docker-build/master/docker-build"
 BUILD_FLAGS += --url "https://www.conterra.de/mapapps"
