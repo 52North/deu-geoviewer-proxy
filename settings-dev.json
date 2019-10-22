@@ -37,7 +37,7 @@
       "enabled": true,
       "url": "https://www.europeandataportal.eu/data",
       "updateInterval": 60,
-      "rowsPerRequest": 2000,
+      "rowsPerRequest": 1000,
       "maxErrorCount": 10
     },
     "storageDir": "/var/lib/ckan-proxy/whitelist.json",

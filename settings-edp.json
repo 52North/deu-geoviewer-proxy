@@ -7,7 +7,7 @@
       "enabled": true,
       "url": "http://www.europeandataportal.eu/data",
       "updateInterval": 20,
-      "rowsPerRequest": 2000,
+      "rowsPerRequest": 1000,
       "maxErrorCount": 10
     },
     "storageDir": "/etc/ckan-whitelist.json",
