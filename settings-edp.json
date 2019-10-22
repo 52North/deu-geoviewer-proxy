@@ -1,18 +1,12 @@
 {
-  "logging": {
-    "level": "info"
-  },
+  "logging": { "level": "info" },
   "whitelist": {
     "ckan": {
       "enabled": true,
       "url": "http://www.europeandataportal.eu/data",
-      "updateInterval": 20,
-      "rowsPerRequest": 1000,
-      "maxErrorCount": 10
+      "updateInterval": 20
     },
     "storageDir": "/etc/ckan-whitelist.json",
-    "domains": [
-      "www.europeandataportal.eu"
-    ]
+    "domains": ["www.europeandataportal.eu"]
   }
 }

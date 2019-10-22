@@ -1,48 +1,16 @@
 {
-  "logging": {
-    "level": "debug"
-  },
+  "logging": { "level": "debug" },
   "proxy": {
     "port": 9090,
-    "cors": {
-      "allowedHeaders": [
-        "accept",
-        "accept-charset",
-        "accept-encoding",
-        "accept-language",
-        "authorization",
-        "content-length",
-        "content-type",
-        "host",
-        "origin",
-        "proxy-connection",
-        "referer",
-        "user-agent",
-        "x-requested-with"
-      ],
-      "allowedMethods": [
-        "HEAD",
-        "POST",
-        "GET",
-        "PUT",
-        "PATCH",
-        "DELETE"
-      ],
-      "allowCredentials": true,
-      "maxAge": 600
-    }
+    "cors": { "maxAge": 600 }
   },
   "whitelist": {
     "ckan": {
       "enabled": true,
       "url": "https://www.europeandataportal.eu/data",
-      "updateInterval": 60,
-      "rowsPerRequest": 1000,
-      "maxErrorCount": 10
+      "updateInterval": 60
     },
     "storageDir": "/var/lib/ckan-proxy/whitelist.json",
-    "domains": [
-      "www.europeandataportal.eu"
-    ]
+    "domains": ["www.europeandataportal.eu"]
   }
 }
