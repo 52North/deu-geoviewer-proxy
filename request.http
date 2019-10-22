@@ -1,0 +1,7 @@
+GET https://www.europeandataportal.eu/data/search/search
+  ?sort=id
+  &filter=dataset
+  &includes=distributions
+  &limit=1
+  &facets=%7B%22format%22%3A%5B%22GeoJSON%22%2C%22WMS%22%5D%7D
+  &page=0

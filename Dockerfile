@@ -28,4 +28,4 @@ VOLUME /var/lib/ckan-proxy
 EXPOSE 9090
 
 ENTRYPOINT [ "/docker-entrypoint.sh" ]
-CMD [ "ckan-proxy", "${CONFIG_FILE}" ]
+CMD [ "ckan-proxy", "/etc/ckan-proxy.json" ]
