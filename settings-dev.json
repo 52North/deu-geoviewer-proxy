@@ -11,6 +11,10 @@
       "updateInterval": 60
     },
     "storageDir": "/var/lib/ckan-proxy/whitelist.json",
-    "domains": ["www.europeandataportal.eu"]
+    "domains": [
+      "www.europeandataportal.eu",
+      "gisco.northeurope.cloudapp.azure.com",
+      "webgate.ec.europa.eu"
+    ]
   }
 }
