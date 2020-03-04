@@ -1,14 +1,18 @@
-FROM node:alpine
+FROM node:11-stretch
 
 # install jq - required for the replacement of env variables
 RUN apk add --no-cache jq
 
+# create the workdir
+RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
+# install global dependencies
 RUN npm install -g bunyan
 
 COPY package.json package-lock.json ./
 
+# install the dependencies
 RUN npm install
 
 COPY . .
