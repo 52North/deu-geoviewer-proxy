@@ -21,7 +21,7 @@ RUN ln -s /usr/src/app/bin/index.js /usr/bin/ckan-proxy \
  && ln -s /usr/src/app/scripts/docker/docker-entrypoint.sh /docker-entrypoint.sh \
  && ln -s /usr/src/app/settings-dev.json /etc/ckan-proxy.json
 
-ENV EDP_DATA_API_URL=https://www.europeandataportal.eu/data \
+ENV SEARCH_ENDPOINT=http://piveau-hub-search.fokus.svc.cluster.local:8080/search\
     WHITELIST_UPDATE_INTERVAL_MINUTES=60 \
     LOGGING_LEVEL=info \
     CONFIG_FILE=/etc/ckan-proxy.json
