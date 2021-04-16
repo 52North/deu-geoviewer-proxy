@@ -8,9 +8,9 @@ services:
     ports: 
       - 9090:9090
     environment: 
-      - EDP_DATA_API_URL=https://www.europeandataportal.eu/data
+      - SEARCH_ENDPOINT=https://www.europeandataportal.eu/data/search/search
       - WHITELIST_UPDATE_INTERVAL_MINUTES=1
       - WHITELIST_STORAGE_DIR=/etc/ckan-whitelist.json
-      - LOGGING_LEVEL=debug
+      - LOGGING_LEVEL=trace
     volumes:
       - /etc/ckan-whitelist.json:/etc/ckan-whitelist.json
