@@ -9,7 +9,7 @@ services:
       - 9090:9090
     environment: 
       - SEARCH_ENDPOINT=https://data.europa.eu/api/hub/search/search
-      - WHITELIST_UPDATE_INTERVAL_MINUTES=1
+      - WHITELIST_UPDATE_INTERVAL_MINUTES=60
       - WHITELIST_STORAGE_DIR=/var/lib/ckan-proxy/whitelist.json
       - LOGGING_LEVEL=trace
     volumes:
