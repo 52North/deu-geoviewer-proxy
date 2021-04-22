@@ -14,7 +14,9 @@
     "domains": [
       "www.europeandataportal.eu",
       "gisco.northeurope.cloudapp.azure.com",
-      "webgate.ec.europa.eu"
+      "webgate.ec.europa.eu",
+      "ppe.data.europa.eu",
+      "data.europa.eu"
     ]
   }
 }
