@@ -1,4 +1,4 @@
-Copyright (C) 2016 con terra GmbH
+Copyright (C) 2016-2021 con terra GmbH
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -14,7 +14,80 @@ limitations under the License.
 
 This project includes:
 
+  ajv under the MIT License
+  asn1 under the MIT License
+  assert-plus under the MIT License
+  asynckit under the MIT License
+  aws-sign2 under the Apache-2.0 License
+  aws4 under the MIT License
+  balanced-match under the MIT License
+  bcrypt-pbkdf under the BSD-3-Clause License
   bluebird under the MIT License
+  bluebird under the MIT License
+  brace-expansion under the MIT License
   bunyan under the MIT License
+  caseless under the Apache-2.0 License
+  ckan-proxy under the Apache-2.0 License
+  combined-stream under the MIT License
+  concat-map under the MIT License
+  core-util-is under the MIT License
+  dashdash under the MIT License
+  delayed-stream under the MIT License
+  dtrace-provider under the BSD-2-Clause License
+  ecc-jsbn under the MIT License
   extend under the MIT License
-  request-promise under the MIT License
+  extend under the MIT License
+  extsprintf under the MIT License
+  fast-deep-equal under the MIT License
+  fast-json-stable-stringify under the MIT License
+  forever-agent under the Apache-2.0 License
+  form-data under the MIT License
+  getpass under the MIT License
+  glob under the ISC License
+  har-schema under the ISC License
+  har-validator under the MIT License
+  http-signature under the MIT License
+  inflight under the ISC License
+  inherits under the ISC License
+  is-typedarray under the MIT License
+  isstream under the MIT License
+  jsbn under the MIT License
+  json-schema-traverse under the MIT License
+  json-schema under the AFLv2.1,BSD License
+  json-stringify-safe under the ISC License
+  jsprim under the MIT License
+  lodash under the MIT License
+  mime-db under the MIT License
+  mime-types under the MIT License
+  minimatch under the ISC License
+  minimist under the MIT License
+  mkdirp under the MIT License
+  moment under the MIT License
+  mv under the MIT License
+  nan under the MIT License
+  ncp under the MIT License
+  oauth-sign under the Apache-2.0 License
+  once under the ISC License
+  path-is-absolute under the MIT License
+  performance-now under the MIT License
+  psl under the MIT License
+  punycode under the MIT License
+  punycode under the MIT License
+  qs under the BSD-3-Clause License
+  request-promise-core under the ISC License
+  request-promise under the ISC License
+  request under the Apache-2.0 License
+  rimraf under the ISC License
+  safe-buffer under the MIT License
+  safe-json-stringify under the MIT License
+  safer-buffer under the MIT License
+  sshpk under the MIT License
+  stealthy-require under the ISC License
+  tough-cookie under the BSD-3-Clause License
+  tough-cookie under the BSD-3-Clause License
+  tunnel-agent under the Apache-2.0 License
+  tweetnacl under the Unlicense License
+  uri-js under the BSD-2-Clause License
+  uuid under the MIT License
+  verror under the MIT License
+  wrappy under the ISC License
