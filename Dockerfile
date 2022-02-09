@@ -1,4 +1,4 @@
-FROM node:11-alpine
+FROM node:14-alpine
 
 # install jq - required for the replacement of env variables
 RUN apk add --no-cache jq
