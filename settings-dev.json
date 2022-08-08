@@ -7,7 +7,7 @@
   "whitelist": {
     "ckan": {
       "enabled": true,
-      "url": "https://www.europeandataportal.eu/data",
+      "url": "https://data.europa.eu/api/hub/search/search",
       "updateInterval": 60
     },
     "storageDir": "/var/lib/ckan-proxy/whitelist.json",
