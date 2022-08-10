@@ -1,12 +1,6 @@
 #!/usr/bin/env node
 
-var cluster = require("cluster");
+import { isMaster } from "cluster";
+import * as workers from "../lib/workers/index.js";
 
-var type;
-if (cluster.isMaster) {
-  type = "master";
-} else {
-  type = process.env.WORKER_TYPE;
-}
-
-require("../lib/workers/" + type)();
+workers[isMaster ? "master" : process.env.WORKER_TYPE]();
