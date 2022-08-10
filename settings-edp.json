@@ -6,6 +6,21 @@
       "url": "https://data.europa.eu/api/hub/search/search",
       "updateInterval": 20
     },
+    "formats": [
+      "GeoJSON",
+      "geojson",
+      "GEOJSON",
+      "WMS",
+      "wms",
+      "WMS_SRVC",
+      "fiware_cb",
+      "FIWARE_CB",
+      "FIWARE-CB",
+      "view",
+      "VIEW",
+      "JSON",
+      "json"
+    ],
     "storageDir": "/etc/ckan-whitelist.json",
     "domains": [
       "www.europeandataportal.eu",

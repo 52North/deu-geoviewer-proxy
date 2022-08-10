@@ -8,15 +8,33 @@
     "ckan": {
       "enabled": true,
       "url": "https://data.europa.eu/api/hub/search/search",
-      "updateInterval": 60
+      "updateInterval": 1440,
+      "maxErrorCount": 5
     },
-    "storageDir": "/var/lib/ckan-proxy/whitelist.json",
+    "storageDir": "./whitelist.json",
+    "formats": [
+      "GeoJSON",
+      "geojson",
+      "GEOJSON",
+      "WMS",
+      "wms",
+      "WMS_SRVC",
+      "fiware_cb",
+      "FIWARE_CB",
+      "FIWARE-CB",
+      "view",
+      "VIEW",
+      "JSON",
+      "json"
+    ],
     "domains": [
       "www.europeandataportal.eu",
       "gisco.northeurope.cloudapp.azure.com",
       "webgate.ec.europa.eu",
       "ppe.data.europa.eu",
-      "data.europa.eu"
+      "data.europa.eu",
+      "datosabiertos.malaga.eu",
+      "opendata.duesseldorf.de"
     ]
   }
 }
