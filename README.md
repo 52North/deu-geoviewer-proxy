@@ -19,6 +19,14 @@ npm install -g '52North/ckan-proxy'
 npm install -g bunyan
 ```
 
+### Running Locally
+
+To start the proxy server manually, use:
+
+```sh
+node bin/index.js <path-to-config.json>
+```
+
 ### Docker
 
 You can use `docker-compose build` or use the following command:
