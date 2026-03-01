@@ -1,11 +1,8 @@
 # data.europa.eu - DEU API CORS Proxy
 
-A lightweight web proxy managing a whitelist of domain names that
-provide a service which is registered in the European Data Portal.
+A lightweight web proxy that manages a whitelist of domain names providing services registered in the European Data Portal.
 
-Initially the DEU API was based on CKAN. This has changed to a native
-API, still the naming in this component mostly still follows the
-original naming.
+Initially, the DEU API was based on CKAN. It has since migrated to a native API, although the naming in this component still largely follows the original structure.
 
 ## Installation
 
