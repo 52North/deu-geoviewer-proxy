@@ -21,7 +21,7 @@ RUN ln -s /usr/src/app/bin/index.js /usr/bin/ckan-proxy \
  && ln -s /usr/src/app/scripts/docker/docker-entrypoint.sh /docker-entrypoint.sh \
  && ln -s /usr/src/app/settings.json /etc/ckan-proxy.json
 
-ENV SEARCH_ENDPOINT=http://piveau-hub-search.fokus.svc.cluster.local:8080/search\
+ENV SPARQL_ENDPOINT="https://data.europa.eu/sparql"\
     WHITELIST_UPDATE_INTERVAL_MINUTES=60 \
     LOGGING_LEVEL=info \
     CONFIG_FILE=/etc/ckan-proxy.json

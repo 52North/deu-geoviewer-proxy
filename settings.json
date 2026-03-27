@@ -5,9 +5,9 @@
     "cors": { "maxAge": 600 }
   },
   "whitelist": {
-    "ckan": {
+    "sparql": {
       "enabled": true,
-      "url": "https://data.europa.eu/api/hub/search/search",
+      "url": "https://data.europa.eu/sparql",
       "updateInterval": 1440,
       "maxErrorCount": 5
     },
